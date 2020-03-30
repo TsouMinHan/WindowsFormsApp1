@@ -16,16 +16,20 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Login_Form());
-            var Login = new Login_Form();
-            var User = new User_Form();
-            DialogResult result = Login.ShowDialog();
-            if (result==DialogResult.OK) {
-                Application.Run(new User_Form());
+            Application.Run(new Order_From());
+
+            if (false) {
+                var Login = new Login_Form();
+                var User = new Main_Form();
+                DialogResult result = Login.ShowDialog();
+                if (result == DialogResult.OK) {
+                    Application.Run(new Main_Form());
+                }
+                else {
+                    MessageBox.Show("Cencel");
+                }
             }
-            else {
-                MessageBox.Show("Cencel");
-            }
+            
         }
     }
 }
