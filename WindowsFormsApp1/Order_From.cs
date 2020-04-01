@@ -17,7 +17,6 @@ namespace WindowsFormsApp1 {
 
         public Order_From() {
             InitializeComponent();
-            int test = 0;
         }
 
         private void Order_From_Load(object sender, EventArgs e) {
@@ -26,26 +25,14 @@ namespace WindowsFormsApp1 {
 
         private void button1_Click(object sender, EventArgs e) {
             cal(sender);
-            //total += 50;
-            //milk_tea += 1;
-            //total_lebel.Text = total.ToString();
-            //list_label.Text = String.Format("奶茶{0}杯\n紅茶{1}杯\n嘎逼{2}杯", milk_tea, black_tea, coffee);
         }
 
         private void button2_Click(object sender, EventArgs e) {
             cal(sender);
-            //total += 30;
-            //black_tea += 1;
-            //total_lebel.Text = total.ToString();
-            //list_label.Text = String.Format("奶茶{0}杯\n紅茶{1}杯\n嘎逼{2}杯", milk_tea, black_tea, coffee);
         }
 
         private void button3_Click(object sender, EventArgs e) {
             cal(sender);
-            //total += 80;
-            //coffee += 1;
-            //total_lebel.Text = total.ToString();
-            //list_label.Text = String.Format("奶茶{0}杯\n紅茶{1}杯\n嘎逼{2}杯", milk_tea, black_tea, coffee);
         }
 
         private void button4_Click(object sender, EventArgs e) {
@@ -54,14 +41,15 @@ namespace WindowsFormsApp1 {
             black_tea = 0;
             coffee = 0;
             total_lebel.Text = total.ToString();
-            //list_label.Text = String.Format("奶茶{0}杯\n紅茶{1}杯\n嘎逼{2}杯", milk_tea, black_tea, coffee);
+            list_label.Text = "";
         }
 
         public void cal(object sender) {
+            //Button b = (Button)sender;
             Button b = sender as Button;
             total += Convert.ToInt32(b.Tag);
             total_lebel.Text = total.ToString();
-            list_label.Text += "\r\n" + b.Text;
+            list_label.Text += b.Text + "\r\n";
 
         }
     }

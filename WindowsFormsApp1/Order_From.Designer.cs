@@ -40,6 +40,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 92);
             this.button1.TabIndex = 0;
+            this.button1.Tag = "50";
             this.button1.Text = "奶茶($50)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -51,6 +52,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 92);
             this.button2.TabIndex = 1;
+            this.button2.Tag = "30";
             this.button2.Text = "紅茶($30)";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -62,6 +64,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 92);
             this.button3.TabIndex = 2;
+            this.button3.Tag = "70";
             this.button3.Text = "嘎逼($70)";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -113,9 +116,8 @@
             this.list_label.Font = new System.Drawing.Font("PMingLiU", 16F);
             this.list_label.Location = new System.Drawing.Point(39, 98);
             this.list_label.Name = "list_label";
-            this.list_label.Size = new System.Drawing.Size(147, 27);
+            this.list_label.Size = new System.Drawing.Size(0, 27);
             this.list_label.TabIndex = 7;
-            this.list_label.Text = "購買清單：";
             // 
             // Order_From
             // 
