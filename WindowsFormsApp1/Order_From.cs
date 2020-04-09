@@ -11,9 +11,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1 {
     public partial class Order_From : Form {
         int total = 0;
-        int buy_num = 1;
-        //綠茶按鈕10快 可樂20 果之40
-   
+        int buy_num = 1;   
 
         public Order_From() {
             InitializeComponent();
