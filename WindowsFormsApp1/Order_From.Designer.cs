@@ -162,6 +162,7 @@
             this.guest_radioButton.TabStop = true;
             this.guest_radioButton.Text = "非會員";
             this.guest_radioButton.UseVisualStyleBackColor = true;
+            this.guest_radioButton.CheckedChanged += new System.EventHandler(this.guest_radioButton_CheckedChanged);
             // 
             // VIP_radioButton
             // 
@@ -173,6 +174,7 @@
             this.VIP_radioButton.TabStop = true;
             this.VIP_radioButton.Text = "VIP會員(打9折)";
             this.VIP_radioButton.UseVisualStyleBackColor = true;
+            this.VIP_radioButton.CheckedChanged += new System.EventHandler(this.VIP_radioButton_CheckedChanged);
             // 
             // discount_label
             // 

@@ -39,7 +39,6 @@ namespace WindowsFormsApp1 {
 
         private void button4_Click(object sender, EventArgs e) {
             total = 0;
-            //total_lebel.Text = total.ToString();
             //list_label.Text = "";
             production_listBox.Items.Clear();
             cal_pay();
@@ -49,7 +48,6 @@ namespace WindowsFormsApp1 {
             //Button b = (Button)sender;
             Button b = sender as Button;
             total += Convert.ToInt32(b.Tag);
-            //total_lebel.Text = total.ToString();
             //list_label.Text += b.Text + "\r\n";
             production_listBox.Items.Add(b.Text);
             cal_pay();
@@ -66,6 +64,7 @@ namespace WindowsFormsApp1 {
                 discount = 0;
             }
             pay = total - discount;
+            total_lebel.Text = total.ToString();
             discount_label.Text = discount.ToString();
             pay_label.Text = pay.ToString();
         }
@@ -83,6 +82,14 @@ namespace WindowsFormsApp1 {
 
         private void button7_Click(object sender, EventArgs e) {
             cal(sender);
+        }
+
+        private void VIP_radioButton_CheckedChanged(object sender, EventArgs e) {
+            cal_pay();
+        }
+
+        private void guest_radioButton_CheckedChanged(object sender, EventArgs e) {
+            cal_pay();
         }
     }
 }
